@@ -1,0 +1,417 @@
+/* ============================================================
+   Traya (Tatva) Design System — Tokens
+   Source: tatva spec + Figma treatment-page SVG (node 1:4400)
+   NOTE: Non-primary palette steps interpolated pending Figma access.
+   v2 — Figma-calibrated grey + green + pillar + signal tokens
+   ============================================================ */
+
+/* --- Nunito Sans (Google Fonts) --- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ===== NEUTRAL — Grey scale (Figma-calibrated) ===== */
+  --grey-0:   #FFFFFF;
+  --grey-50:  #FAFAFA;
+  --grey-75:  #F7F7F7;   /* divider bg        (Figma) */
+  --grey-100: #F0F0F0;   /* hairline fill     (Figma) */
+  --grey-150: #DEDEDE;   /* divider line      (Figma) */
+  --grey-200: #C9C9C9;   /* border            (Figma) */
+  --grey-300: #999999;   /* tertiary text     (Figma) */
+  --grey-400: #787878;   /* quaternary text   (Figma) */
+  --grey-500: #5C5C5C;   /* secondary text    (Figma) */
+  --grey-600: #404040;   /* primary text      (Figma) */
+  --grey-700: #2C2C2A;   /* inverse surface   (Figma) */
+  --grey-800: #262626;
+  --grey-900: #1A1A1A;
+  --grey-950: #0A0A0A;
+
+  /* ===== ACTION — Male (lime) ===== */
+  --lime-50:  #F4FBE4;
+  --lime-100: #E6F5C5;
+  --lime-200: #CFEC96;
+  --lime-300: #B6E066;
+  --lime-400: #9FD147;
+  --lime-500: #84B82F;   /* primary male CTA */
+  --lime-600: #6B9A22;
+  --lime-700: #547B1A;
+  --lime-800: #405D14;
+  --lime-900: #2C400D;
+
+  /* ===== ACTION — Female (copper) ===== */
+  --copper-50:  #FBF0E7;
+  --copper-100: #F5DCC5;
+  --copper-200: #EDC097;
+  --copper-300: #E29F64;
+  --copper-400: #D78241;
+  --copper-500: #C3692A;
+  --copper-600: #A0541F;   /* primary female CTA */
+  --copper-700: #7F4218;
+  --copper-800: #5F3212;
+  --copper-900: #40210B;
+
+  /* ===== SUPPORT — Male (green) — anchors from Figma scalp-test screen ===== */
+  --green-25:  #EAF5F0;   /* Tatva header / soft fill     (Figma) */
+  --green-50:  #DCF4E8;   /* chip bg                      (Figma) */
+  --green-100: #C9E7D3;
+  --green-200: #A0D3B1;
+  --green-300: #34A354;   /* signal-success-mid           (Figma) */
+  --green-400: #2D8A5D;   /* dark mid                     (Figma) */
+  --green-500: #277750;   /* dark                         (Figma) */
+  --green-550: #25824D;   /* signal-success anchor        (Figma) */
+  --green-600: #216443;   /* deep                         (Figma) */
+  --green-700: #184A31;
+  --green-800: #0F341E;
+  --green-900: #05150B;
+
+  /* ===== SUPPORT — Female (clay) ===== */
+  --clay-50:  #FAEFEA;
+  --clay-100: #F1D4C8;
+  --clay-200: #E5B29F;
+  --clay-300: #D48F76;
+  --clay-400: #BC6E54;
+  --clay-500: #9E5539;
+  --clay-600: #7F4228;
+  --clay-700: #60311C;
+  --clay-800: #432112;
+  --clay-900: #2A140B;
+
+  /* ===== INFO — Male (blue) ===== */
+  --blue-50:  #EAF1FB;
+  --blue-100: #C9DAF4;
+  --blue-200: #9DB9EA;
+  --blue-300: #225BC6;   /* signal/message anchors here */
+  --blue-400: #1D4DA9;
+  --blue-500: #17408C;
+  --blue-600: #12336F;
+  --blue-700: #0D2653;
+  --blue-800: #091A39;
+  --blue-900: #040E20;
+
+  /* ===== INFO — Female (purple) ===== */
+  --purple-50:  #F2ECF7;
+  --purple-100: #DFD0EB;
+  --purple-200: #C2A7DA;
+  --purple-300: #9E7AC3;
+  --purple-400: #7F57AE;
+  --purple-500: #653F94;
+  --purple-600: #4F3076;
+  --purple-700: #3A2258;
+  --purple-800: #27173C;
+  --purple-900: #160C22;
+
+  /* ===== EXTENDED ===== */
+  --orange-50:  #FEF2E6;
+  --orange-100: #FCDFC1;
+  --orange-200: #F9C28A;
+  --orange-300: #F5A051;
+  --orange-400: #E7862E;
+  --orange-500: #C96B1D;
+  --orange-600: #A35415;
+
+  --rajah-50:  #FDEFDA;
+  --rajah-100: #FAD9A6;
+  --rajah-200: #F6BE72;
+  --rajah-300: #F0A048;
+  --rajah-400: #D9832C;
+  --rajah-500: #B2651D;
+
+  --sand-50:  #FAF5EC;
+  --sand-100: #F1E6CE;
+  --sand-200: #E4D3A8;
+  --sand-300: #CFB77A;
+  --sand-400: #B39853;
+  --sand-500: #8E783B;
+
+  --sage-50:  #EFF3EA;
+  --sage-100: #D8E2C8;
+  --sage-200: #B9C89F;
+  --sage-300: #94A877;
+  --sage-400: #728856;
+  --sage-500: #546840;
+
+  /* ===== PILLAR ACCENTS — 3 sciences (from Figma kit cards) ===== */
+  /* Ayurveda — dark olive */
+  --pillar-ayur-bg:      #EEE4AF;
+  --pillar-ayur-bg-alt:  #E3D18A;
+  --pillar-ayur-ink:     #404B11;
+  --pillar-ayur-ink-alt: #857641;
+
+  /* Nutrition — warm amber (shares Ayurveda's warm tonality; lighter tones) */
+  --pillar-nutr-bg:      #FDEFDA;
+  --pillar-nutr-bg-alt:  #F6BE72;
+  --pillar-nutr-ink:     #8E783B;
+  --pillar-nutr-ink-alt: #B2651D;
+
+  /* Dermatology — cool blue */
+  --pillar-derm-bg:      #ECF5F8;
+  --pillar-derm-bg-alt:  #DAEBF1;
+  --pillar-derm-ink:     #2B5F73;
+  --pillar-derm-ink-alt: #3C839F;
+
+  /* ===== SIGNAL (Figma-anchored) ===== */
+  --signal-success:       #25824D;
+  --signal-success-mid:   #34A354;
+  --signal-success-bg:    #DCF4E8;
+  --signal-notice:        #F5B704;
+  --signal-notice-bg:     #FFF4D0;
+  --signal-warning:       #C72928;
+  --signal-warning-bg:    #FDECEC;
+  --signal-message:       #3C839F;
+  --signal-message-bg:    #ECF5F8;
+
+  /* ===== EXTERNAL BRAND ===== */
+  --whatsapp-light: #25D366;
+  --whatsapp-dark:  #103928;
+
+  /* ===== SEMANTIC ALIASES ===== */
+  --bg-canvas:        #FAF7F2;   /* warm off-white base */
+  --bg-surface:       #FFFFFF;
+  --bg-surface-alt:   #F5F1EA;
+  --bg-inverse:       #1A1A1A;
+
+  --text-primary:     var(--grey-600);   /* #404040 */
+  --text-secondary:   var(--grey-500);   /* #5C5C5C */
+  --text-tertiary:    var(--grey-400);   /* #787878 */
+  --text-muted:       var(--grey-300);   /* #999999 */
+  --text-inverse:     var(--grey-0);
+  --text-disabled:    var(--grey-300);
+
+  --border-hairline:  var(--grey-150);   /* #DEDEDE */
+  --border-faint:     var(--grey-100);   /* #F0F0F0 */
+  --border-strong:    var(--grey-200);
+  --border-focus:     var(--lime-500);
+
+  /* Defaults map to MALE journey; override on <body data-journey="female"> below */
+  --action:           var(--lime-500);
+  --action-hover:     var(--lime-600);
+  --action-press:     var(--lime-700);
+  --action-disabled:  var(--lime-200);
+  --action-text:      var(--grey-900);
+
+  --support:          var(--green-300);
+  --support-hover:    var(--green-400);
+  --support-text:     var(--grey-0);
+
+  --info:             var(--blue-300);
+  --info-bg:          var(--blue-50);
+  --info-text:        var(--blue-300);
+
+  /* ===== TYPE SCALE ===== */
+  --font-sans: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --text-2xs-size: 8px;   --text-2xs-lh: 10px;  --text-2xs-tracking: 0.10em;
+  --text-xs-size:  10px;  --text-xs-lh:  12px;  --text-xs-tracking:  0.04em;
+  --text-sm-size:  12px;  --text-sm-lh:  16px;  --text-sm-tracking:  0.02em;
+  --text-base-size:14px;  --text-base-lh:20px;  --text-base-tracking:0;
+  --text-md-size:  16px;  --text-md-lh:  20px;  --text-md-tracking:  0;
+  --text-lg-size:  18px;  --text-lg-lh:  22px;  --text-lg-tracking:  0;
+  --text-xl-size:  20px;  --text-xl-lh:  24px;  --text-xl-tracking:  -0.025em;
+  --text-2xl-size: 22px;  --text-2xl-lh: 26px;  --text-2xl-tracking: -0.025em;
+  --text-3xl-size: 26px;  --text-3xl-lh: 30px;  --text-3xl-tracking: -0.04em;
+
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ===== SPACING (8-step rhythm) ===== */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ===== RADII ===== */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-pill: 999px;
+
+  /* ===== SHADOWS ===== */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.10);
+  --shadow-inset-hairline: inset 0 0 0 1px rgba(0,0,0,0.06);
+
+  /* ===== MOTION ===== */
+  --ease-ui: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-content: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-med:  250ms;
+  --dur-slow: 400ms;
+}
+
+/* Journey switch — Female palette overrides Action/Support/Info */
+body[data-journey="female"] {
+  --action:          var(--copper-600);
+  --action-hover:    var(--copper-700);
+  --action-press:    var(--copper-800);
+  --action-disabled: var(--copper-200);
+  --action-text:     var(--grey-0);
+
+  --support:         var(--clay-400);
+  --support-hover:   var(--clay-500);
+  --support-text:    var(--grey-0);
+
+  --info:            var(--purple-400);
+  --info-bg:         var(--purple-50);
+  --info-text:       var(--purple-500);
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT DEFAULTS
+   ============================================================ */
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-lh);
+  color: var(--text-primary);
+  background: var(--bg-canvas);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 {
+  font-size: var(--text-3xl-size);
+  line-height: var(--text-3xl-lh);
+  letter-spacing: var(--text-3xl-tracking);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-4);
+  text-wrap: pretty;
+}
+h2, .h2 {
+  font-size: var(--text-2xl-size);
+  line-height: var(--text-2xl-lh);
+  letter-spacing: var(--text-2xl-tracking);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-3);
+  text-wrap: pretty;
+}
+h3, .h3 {
+  font-size: var(--text-xl-size);
+  line-height: var(--text-xl-lh);
+  letter-spacing: var(--text-xl-tracking);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-3);
+}
+h4, .h4 {
+  font-size: var(--text-lg-size);
+  line-height: var(--text-lg-lh);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-2);
+}
+h5, .h5 {
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-lh);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-2);
+}
+
+p, .body {
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-lh);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-3);
+}
+.body-sm {
+  font-size: var(--text-base-size);
+  line-height: var(--text-base-lh);
+  color: var(--text-secondary);
+}
+.caption {
+  font-size: var(--text-sm-size);
+  line-height: var(--text-sm-lh);
+  letter-spacing: var(--text-sm-tracking);
+  color: var(--text-secondary);
+}
+.eyebrow {
+  font-size: var(--text-xs-size);
+  line-height: var(--text-xs-lh);
+  letter-spacing: var(--text-xs-tracking);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color var(--dur-fast) var(--ease-ui);
+}
+a:hover { color: var(--action); }
+
+/* Button primitives */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 12px 20px;
+  font-family: var(--font-sans);
+  font-size: var(--text-base-size);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease-ui),
+              transform var(--dur-fast) var(--ease-ui);
+}
+.btn:active { transform: scale(0.98); }
+.btn:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+.btn--primary {
+  background: var(--action);
+  color: var(--action-text);
+}
+.btn--primary:hover { background: var(--action-hover); }
+.btn--primary:disabled { background: var(--action-disabled); cursor: not-allowed; transform: none; }
+.btn--secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--grey-700);
+}
+.btn--secondary:hover { background: var(--grey-700); color: var(--grey-0); }
+.btn--whatsapp {
+  background: var(--whatsapp-light);
+  color: #fff;
+}
+.btn--whatsapp:hover { background: #1EB955; }
+
+/* Cards */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+.card--shadow {
+  border: none;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Focus ring baseline */
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
